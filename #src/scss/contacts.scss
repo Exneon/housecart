@@ -1,0 +1,203 @@
+.contacts {
+    padding-top: 100px;
+    position: relative;
+    &__block {
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 107px;
+        position: relative;
+        z-index: 1;
+    }
+    &__left {
+        margin-bottom: 20px;
+    }
+    &__right {
+        max-width: 640px;
+        width: 100%;
+    }
+    &__bg {
+        background: url("../img/contacts-bg.png") no-repeat;
+        position: absolute;
+        bottom: -15px;
+        left: 0;
+        width: 100%;
+        height: 245px;
+        z-index: 0;
+    }
+}
+.left-contacts {
+    display: flex;
+    flex-direction: column;
+    padding: 60px 30px 108px 30px;
+    box-shadow: 0 0 24px 0 rgba(122, 198, 253, 0.32);
+    &__title {
+        font-family: "Roboto";
+        font-size: 36px;
+        font-weight: 500;
+        line-height: 1.39;
+        text-align: left;
+        color: $brownish-orange;
+        margin-bottom: 21px;
+    }
+    &__subtitle {
+        font-family: "Roboto";
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.25;
+        text-align: left;
+        color: $warm-grey-three;
+        max-width: 370px;
+        width: 100%;
+        margin-bottom: 51px;
+    }
+    &__form {
+        display: flex;
+        flex-direction: column;
+        max-width: 400px;
+        input {
+            width: 100%;
+            height: 60px;
+            padding: 19px 24px;
+            margin-bottom: 35px;
+            color: $pinkish-grey;
+            border: solid 1px #e1e5e5;
+            &::-webkit-input-placeholder {
+                color: $pinkish-grey;
+            }
+            &:-moz-placeholder {
+                color: $pinkish-grey;
+            }
+            &::-moz-placeholder {
+                color: $pinkish-grey;
+            }
+            &:-ms-input-placeholder {
+                color: $pinkish-grey;
+            }
+        }
+        button {
+            font-family: "Roboto";
+            font-size: 18px;
+            font-weight: bold;
+            line-height: 3.33;
+            text-align: center;
+            color: $mainColor;
+            width: 100%;
+            background-color: $brownish-orange;
+        }
+    }
+}
+.right-contacts {
+    display: flex;
+    flex-direction: column;
+    padding: 39px 30px 30px 30px;
+    box-shadow: 0 0 24px 0 rgba(122, 198, 253, 0.32);
+    &__title {
+        font-family: "Roboto";
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 2;
+        color: $black-three;
+        margin-bottom: 30px;
+    }
+    &__form {
+        display: flex;
+        flex-direction: column;
+        input {
+            width: 100%;
+            height: 50px;
+            padding: 19px 17px;
+            margin-bottom: 19px;
+            color: $pinkish-grey;
+            border: solid 1px #cff0ff;
+            &::-webkit-input-placeholder {
+                color: $pinkish-grey;
+            }
+            &:-moz-placeholder {
+                color: $pinkish-grey;
+            }
+            &::-moz-placeholder {
+                color: $pinkish-grey;
+            }
+            &:-ms-input-placeholder {
+                color: $pinkish-grey;
+            }
+        }
+        button {
+            font-family: "Roboto";
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 3.33;
+            text-align: center;
+            color: $mainColor;
+            width: 100%;
+            background-color: $brownish-orange;
+            max-width: 211px;
+            margin-top: 30px;
+            margin-left: auto;
+        }
+        textarea {
+            border: solid 1px #cff0ff;
+            resize: none;
+            padding: 19px 0px 0px 17px;
+            height: 211px;
+            color: $pinkish-grey;
+            &::-webkit-input-placeholder {
+                color: $pinkish-grey;
+            }
+            &:-moz-placeholder {
+                color: $pinkish-grey;
+            }
+            &::-moz-placeholder {
+                color: $pinkish-grey;
+            }
+            &:-ms-input-placeholder {
+                color: $pinkish-grey;
+            }
+        }
+    }
+}
+@media (min-width: 1400px) {
+}
+@media (min-width: 1200px) {
+    .contacts {
+        &__block {
+            justify-content: space-between;
+        }
+    }
+    .right-contacts {
+        &__form {
+            button {
+                max-width: 211px;
+            }
+        }
+    }
+}
+@media (min-width: 992px) {
+}
+@media (min-width: 768px) {
+}
+@media (min-width: 576px) {
+}
+@media (min-width: 1px) {
+    .contacts {
+        &__block {
+            justify-content: space-around;
+        }
+    }
+    .right-contacts {
+        &__form {
+            button {
+                max-width: 100%;
+            }
+        }
+    }
+    .btn {
+        transition: all 0.3s ease;
+        border: 1px solid $brownish-orange;
+        &:hover {
+            background-color: $mainColor;
+            border: 1px solid $brownish-orange;
+            color: $brownish-orange;
+        }
+    }
+}

@@ -1,0 +1,16 @@
+.footer {
+    &__bg {
+        height: 100px;
+        background-color: $black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__text {
+        font-family: "Roboto";
+        font-size: 16px;
+        font-weight: 400;
+        text-align: center;
+        color: $pinkish-grey;
+    }
+}

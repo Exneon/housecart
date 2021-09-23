@@ -1,0 +1,80 @@
+.features {
+    padding: 100px 0 80px 0;
+    &__title {
+        font-family: "Roboto";
+        font-size: 40px;
+        font-weight: bold;
+        line-height: 0.7;
+        text-align: center;
+        color: $black-three;
+        &::after {
+            content: "";
+            display: block;
+            width: 100px;
+            height: 7px;
+            background-color: $brownish-orange;
+            margin: 20px auto 73px auto;
+        }
+    }
+    &__posts {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__post {
+        padding: 50px 22px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: $mainColor;
+        box-shadow: 0 0 24px 0 rgba(122, 198, 253, 0.32);
+        margin-bottom: 20px;
+        max-width: 370px;
+        width: 100%;
+        p {
+            font-family: "Roboto";
+            line-height: 1.56;
+            text-align: center;
+            color: $warm-grey;
+            max-width: 320px;
+        }
+    }
+    &__icon {
+        padding: 35px;
+        box-shadow: 0 0 6px 0 rgba(122, 198, 253, 0.32);
+        border-radius: 50%;
+        flex: 1 1 auto;
+    }
+    &__subtitle {
+        p {
+            font-size: 24px;
+            font-weight: bold;
+            line-height: 1.08;
+            text-align: center;
+            color: $brownish-orange;
+            margin: 31px 0 17px 0;
+        }
+    }
+}
+@media (min-width: 1400px) {
+}
+@media (min-width: 1200px) {
+    .features {
+        &__posts {
+            justify-content: space-between;
+        }
+    }
+}
+@media (min-width: 992px) {
+}
+@media (min-width: 768px) {
+}
+@media (min-width: 576px) {
+}
+@media (min-width: 1px) {
+    .features {
+        &__posts {
+            justify-content: space-around;
+        }
+    }
+}

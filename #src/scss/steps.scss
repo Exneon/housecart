@@ -1,0 +1,130 @@
+.steps {
+    background: url("../img/steps-bg.png") 0 0 / cover no-repeat;
+    min-height: 842px;
+    position: relative;
+    &__title {
+        padding-top: 100px;
+        font-family: "Roboto";
+        font-size: 40px;
+        font-weight: bold;
+        line-height: 1;
+        color: $black-three;
+        text-align: center;
+        &::after {
+            content: "";
+            display: block;
+            width: 100px;
+            height: 7px;
+            background-color: $brownish-orange;
+            margin: 20px auto 73px auto;
+        }
+    }
+    &__posts {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        position: relative;
+        z-index: 1;
+    }
+    &__post {
+        padding: 64px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: $mainColor;
+        box-shadow: 0 0 24px 0 rgba(122, 198, 253, 0.32);
+        margin-bottom: 20px;
+        max-width: 370px;
+        width: 100%;
+    }
+    &__number {
+        font-family: "Roboto";
+        font-size: 35.5px;
+        font-weight: 900;
+        line-height: 1.27;
+        text-align: left;
+        color: $brownish-orange;
+        margin-bottom: 29px;
+    }
+    &__subtitle {
+        p {
+            font-family: "Roboto";
+            font-size: 22px;
+            font-weight: bold;
+            line-height: 1.56;
+            text-align: center;
+            color: $brownish-orange;
+        }
+    }
+    &__description {
+        font-family: "Roboto";
+        font-size: 16px;
+        line-height: 1.44;
+        text-align: center;
+        color: $warm-grey-two;
+        max-width: 273px;
+    }
+    &__bg {
+        background: url("../img/steps-bg-right.png") 0 0 / cover no-repeat;
+        position: absolute;
+        bottom: -100px;
+        right: 0;
+        width: 596px;
+        height: 591px;
+        z-index: 0;
+    }
+}
+.video {
+    margin-bottom: 20px;
+    &__container {
+        position: relative;
+        padding-bottom: 56.25%;
+        height: 0;
+        overflow: hidden;
+        max-width: 828px;
+        width: 100%;
+        z-index: 1;
+        margin: -310px auto 0 auto;
+    }
+    &__container iframe,
+    &__container object,
+    &__container embed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .steps {
+        &__posts {
+            justify-content: space-between;
+        }
+    }
+    .video {
+        &__container {
+            margin: -335px auto 0 auto;
+        }
+    }
+}
+@media (min-width: 992px) {
+}
+@media (min-width: 768px) {
+}
+@media (min-width: 576px) {
+}
+@media (min-width: 1px) {
+    .video {
+        &__container {
+            margin: 0 auto;
+        }
+    }
+    .steps {
+        &__posts {
+            justify-content: space-around;
+        }
+    }
+}

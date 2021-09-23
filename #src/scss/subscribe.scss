@@ -1,0 +1,119 @@
+.subscribe {
+    background: $brownish-orange url("../img/subscribe-bg.png") right bottom
+        no-repeat;
+    min-height: 536px;
+    &__title {
+        padding-top: 147px;
+        font-family: "Roboto";
+        font-weight: bold;
+        line-height: 1.36;
+        text-align: center;
+        color: $white-three;
+    }
+    &__subtitle {
+        font-family: "Roboto";
+        font-size: 25px;
+        font-weight: bold;
+        line-height: 1.36;
+        text-align: center;
+        color: $white-three;
+        margin-bottom: 39px;
+    }
+    &__mail {
+        max-width: 753px;
+        margin: 0 auto;
+        form {
+            background-color: rgba($black-two, 0.5);
+            display: flex;
+            justify-content: center;
+            padding: 22px;
+            input {
+                background: $mainColor url("../img/mail-icon.svg") 20px
+                    no-repeat;
+                max-width: 564px;
+                width: 100%;
+                height: 65px;
+                padding: 19px 24px 19px 66px;
+                color: $white-four;
+                &::-webkit-input-placeholder {
+                    color: $white-four;
+                }
+                &:-moz-placeholder {
+                    color: $white-four;
+                }
+                &::-moz-placeholder {
+                    color: $white-four;
+                }
+                &:-ms-input-placeholder {
+                    color: $white-four;
+                }
+            }
+            button {
+                font-family: "Roboto";
+                font-size: 18px;
+                font-weight: bold;
+                line-height: 3.33;
+                text-align: center;
+                color: $mainColor;
+                width: 100%;
+                max-width: 166px;
+                background-color: $brownish-orange;
+                transition: 0.4s ease;
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+}
+@media (min-width: 768px) {
+    .subscribe {
+        &__title {
+            h2 {
+                font-size: 50px;
+            }
+        }
+        &__mail {
+            form {
+                flex-wrap: nowrap;
+                input {
+                    max-width: 564px;
+                    padding: 19px 24px 19px 66px;
+                }
+                button {
+                    max-width: 166px;
+                    &:hover {
+                        max-width: 200px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 576px) {
+}
+@media (min-width: 1px) {
+    .subscribe {
+        &__title {
+            h2 {
+                font-size: 35px;
+            }
+        }
+        &__mail {
+            form {
+                flex-wrap: wrap;
+                input {
+                    max-width: 100%;
+                    padding: 19px 24px 19px 55px;
+                    &:focus {
+                        padding: 19px 24px 19px 19px;
+                        background: $mainColor;
+                    }
+                }
+                button {
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}

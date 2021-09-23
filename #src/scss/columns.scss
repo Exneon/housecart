@@ -1,0 +1,68 @@
+table,
+th,
+td {
+    border: 1px solid $mainColor;
+    background-color: $brownish-orange;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+th,
+td {
+    padding: 13px;
+    min-width: 290px;
+}
+td {
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.75;
+    text-align: left;
+    color: $mainColor;
+}
+th {
+    font-family: "Roboto";
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 1.27;
+    text-align: left;
+    color: $mainColor;
+}
+.table-adapt {
+    overflow-x: auto;
+}
+.columns {
+    margin-bottom: 17.5%;
+}
+@media (min-width: 1400px) {
+}
+@media (min-width: 1200px) {
+}
+@media (min-width: 992px) {
+}
+@media (min-width: 768px) {
+    table,
+    th,
+    td {
+        table-layout: fixed;
+    }
+    .border {
+        border-left: 9px solid $mainColor;
+        border-right: 9px solid $mainColor;
+    }
+}
+@media (min-width: 576px) {
+}
+@media (min-width: 1px) {
+    table,
+    th,
+    td {
+        table-layout: auto;
+    }
+    .border {
+        border-left: 0px solid $mainColor;
+        border-right: 0px solid $mainColor;
+    }
+}
