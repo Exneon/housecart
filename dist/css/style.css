@@ -480,6 +480,8 @@ h6 {
 }
 
 .features__icon {
+  width: 150px;
+  height: 150px;
   padding: 35px;
   -webkit-box-shadow: 0 0 6px 0 rgba(122, 198, 253, 0.32);
           box-shadow: 0 0 6px 0 rgba(122, 198, 253, 0.32);
